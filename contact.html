@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Gravure du Lion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="index.html">Gravure <strong>du Lion</strong></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a class="btn primary" href="contact.html#devis">Demander un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-secondary" data-anim="fade-up">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h1>Un interlocuteur unique suit votre dossier.</h1>
+          <p>Expliquez vos besoins, joignez vos fichiers et nous revenons vers vous sous 24h avec une proposition détaillée.</p>
+        </div>
+        <div class="contact-channels">
+          <article>
+            <h2>Coordonnées directes</h2>
+            <ul>
+              <li>Téléphone : +33 4 72 00 00 00</li>
+              <li>Email : <a href="mailto:contact@gravuredulion.fr">contact@gravuredulion.fr</a></li>
+              <li>Atelier : 38 rue des Artisans, 69007 Lyon</li>
+            </ul>
+          </article>
+          <article>
+            <h2>Réseaux & partage de fichiers</h2>
+            <ul>
+              <li><a href="#">LinkedIn</a> — suivi des projets corporate</li>
+              <li><a href="#">Instagram</a> — coulisses de l’atelier</li>
+              <li><a href="#">Behance</a> — études de cas détaillées</li>
+              <li>Uploader des fichiers volumineux : <a href="#">WeTransfer dédié</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-grid container" id="devis" data-anim="fade-up">
+      <form class="contact-form" aria-label="Demande de devis">
+        <p class="eyebrow">Formulaire</p>
+        <h2>Brief projet</h2>
+        <label>
+          Nom / entreprise
+          <input type="text" name="company" required>
+        </label>
+        <label>
+          Email professionnel
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Téléphone
+          <input type="tel" name="phone">
+        </label>
+        <label>
+          Type de support
+          <select name="material" required>
+            <option value="">Sélectionner</option>
+            <option value="metal">Métal</option>
+            <option value="organique">Bois / cuir</option>
+            <option value="plastique">Plastique technique</option>
+            <option value="autre">Autre / mixte</option>
+          </select>
+        </label>
+        <label>
+          Détails du projet
+          <textarea name="details" rows="5" required placeholder="Dimensions, quantité, finitions souhaitées…"></textarea>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="nda">
+          Besoin d’un accord de confidentialité (NDA)
+        </label>
+        <button class="btn primary" type="submit">Envoyer ma demande</button>
+        <p class="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-info">
+        <p class="eyebrow">Horaires & accès</p>
+        <h2>Atelier & showroom</h2>
+        <ul>
+          <li>Lundi — Vendredi : 8h30 - 19h</li>
+          <li>Samedi : sur rendez-vous</li>
+          <li>Parking visiteurs et zone de chargement</li>
+        </ul>
+        <div class="map-placeholder" aria-label="Carte d’accès">
+          <p>Lyon 7 • Quartier Gerland</p>
+          <span>Metro B, arrêt Jean Macé</span>
+        </div>
+        <p>Besoin d’un audit matière ? Apportez vos échantillons, nous testons sous 48h.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">Gravure <strong>du Lion</strong></a>
+        <p>Atelier de gravure laser installé à Lyon, au service des marques exigeantes.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Coordonnées</p>
+        <ul>
+          <li>+33 4 72 00 00 00</li>
+          <li><a href="mailto:contact@gravuredulion.fr">contact@gravuredulion.fr</a></li>
+          <li>38 rue des Artisans, 69007 Lyon</li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Réseaux</p>
+        <ul class="socials">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Behance</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Gravure du Lion — Tous droits réservés.</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
+

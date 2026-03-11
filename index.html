@@ -3,14 +3,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gravure PAPS - Gravure Laser de Médailles</title>
+  <title>Gravure du Lion | Gravure laser de précision</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="index.html" aria-label="Gravure du Lion, retour à l'accueil">
+        <span>Gravure</span>
+        <strong>du Lion</strong>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn primary" href="contact.html#devis">Demander un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" data-anim="fade-up">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Gravure laser premium</p>
+          <h1>Des pièces uniques, gravées avec la précision d’un atelier expert.</h1>
+          <p>Nous accompagnons les artisans, industriels et maisons de luxe avec des gravures laser sur-mesure, sur métal, bois, cuir et matériaux techniques.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="contact.html#devis">Briefons votre projet</a>
+            <a class="btn ghost" href="projects.html">Voir nos réalisations</a>
+          </div>
+          <ul class="hero-stats">
+            <li>
+              <span class="stat">850+</span>
+              <span>Projets livrés</span>
+            </li>
+            <li>
+              <span class="stat">72h</span>
+              <span>Délai express</span>
+            </li>
+            <li>
+              <span class="stat">99,2%</span>
+              <span>Satisfaction client</span>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-card" data-anim="fade-left">
+          <p class="eyebrow">Applications</p>
+          <h2>Signalétique, médailles, pièces mécaniques, cadeaux d’affaires…</h2>
+          <p>Chaque gravure est contrôlée et emballée par nos équipes, avec suivi photo avant expédition.</p>
+          <a href="projects.html" class="link-arrow">Explorer les projets</a>
+        </div>
+        <div class="hero-media" data-anim="fade-left">
+          <img src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?auto=format&fit=crop&w=900&q=80" alt="Gravure laser sur pièce métallique" loading="lazy">
+          <p>Gravure profonde sur acier brossé, réalisée dans notre atelier lyonnais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services" data-anim="fade-up">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Expertises</p>
+          <h2>De la pièce unique aux séries de production.</h2>
+          <p>Nos protocoles assurent une gravure régulière, contrastée et durable sur chaque support.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Gravure métal</h3>
+            <p>Acier, inox, aluminium anodisé et laiton avec finition brute ou noire.</p>
+            <ul>
+              <li>Séries industrielles</li>
+              <li>Plaques signalétiques</li>
+              <li>Marquage CE et QR</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Gravure organique</h3>
+            <p>Bois, cuir, liège et matières naturelles pour accessoires premium.</p>
+            <ul>
+              <li>Séries personnalisées</li>
+              <li>Packaging luxe</li>
+              <li>Objets déco</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Prototypage & R&D</h3>
+            <p>Accompagnement design, tests matière et rapport colorimétrique.</p>
+            <ul>
+              <li>Délais courts</li>
+              <li>Itérations guidées</li>
+              <li>Support fichiers 3D</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="industries" data-anim="fade-up">
+      <div class="container industries-grid">
+        <div>
+          <p class="eyebrow">Secteurs servis</p>
+          <h2>Manufacture, retail, événementiel et studios créatifs.</h2>
+          <p>Un interlocuteur unique suit votre dossier de la préparation des fichiers à l’expédition. Nos machines 120W couvrent aussi bien la précision joaillerie que les formats XXL.</p>
+        </div>
+        <ul>
+          <li>Maisons horlogères et joaillerie</li>
+          <li>Studios de design produit</li>
+          <li>Constructeurs et équipementiers</li>
+          <li>Agences événementielles</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="process" data-anim="fade-up">
+      <div class="container section-head">
+        <p class="eyebrow">Workflow</p>
+        <h2>Un process clair, pensé pour vos délais.</h2>
+      </div>
+      <div class="timeline container">
+        <article>
+          <span>01</span>
+          <h3>Brief & conseil matière</h3>
+          <p>Analyse de vos fichiers vectoriels/3D et ajustement des paramètres laser.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Prototype validé</h3>
+          <p>Envoi d’un tir-test photo ou physique avant lancement série.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Production & contrôle</h3>
+          <p>Gravure en salle climatisée, contrôle qualité et packaging sur mesure.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Livraison suivie</h3>
+          <p>Transporteur express ou retrait atelier, avec suivi temps réel.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase" data-anim="fade-up">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Réalisations en images</p>
+          <h2>Quelques textures passées sous notre faisceau laser.</h2>
+          <p>Chaque photo est prise en interne afin d’assurer la fidélité des textures envoyées à nos clients.</p>
+        </div>
+        <div class="media-grid">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Plaque en aluminium gravée" loading="lazy">
+            <figcaption>Plaque aluminium anodisé • Contraste noir profond.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80" alt="Gravure sur cuir" loading="lazy">
+            <figcaption>Cuir pleine fleur embossé pour cadeaux VIP.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1473100567448-43484ad37f52?auto=format&fit=crop&w=900&q=80" alt="Pièce mécanique gravée" loading="lazy">
+            <figcaption>Numérotation laser sur pièces mécaniques.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" data-anim="fade-up">
+      <div class="container cta-card">
+        <div>
+          <p class="eyebrow">Prêt à lancer votre gravure ?</p>
+          <h2>Envoyez vos fichiers et recevez un devis sous 24h.</h2>
+        </div>
+        <a class="btn primary" href="contact.html#devis">Accéder au formulaire</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html">Gravure <strong>du Lion</strong></a>
+        <p>Atelier de gravure laser installé à Lyon, au service des marques exigeantes.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Coordonnées</p>
+        <ul>
+          <li>+33 4 72 00 00 00</li>
+          <li><a href="mailto:contact@gravuredulion.fr">contact@gravuredulion.fr</a></li>
+          <li>38 rue des Artisans, 69007 Lyon</li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Réseaux</p>
+        <ul class="socials">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Behance</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Gravure du Lion — Tous droits réservés.</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
 
